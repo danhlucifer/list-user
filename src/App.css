@@ -1,38 +1,114 @@
-.App {
+body {
+  background-color: #333;
+  color: #fff;
+}
+/* Home */
+.Home-Container{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+/* navbar */
+.container-Navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.Navbar-title{
+  display: flex;
+  align-items: center;
+}
+.Navbar-todo{
+  display: flex;
+  width: 124px;
+  height: 48px;
+  justify-content: center;
+  transition: 0.5s;
+}
+.Navbar-todo:hover{
+  background-color: cadetblue;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.Navbar-todo p{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+.Navbar-user{
+  display: flex;
+  width: 120px;
+  height: 48px;
+  justify-content: center;
+  transition: 0.5s;
+}
+.Navbar-user:hover{
+  background-color: cadetblue;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.Navbar-user p{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+/* Todolist */
+.todo {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.taskBg{
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.taskBg div{
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+.taskNumber{
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 8px;
+  font-size: 14px;
+}
+.taskBg .taskText{
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.taskBg .done .taskText{
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+.iconWrap{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 15px;
+  width: auto;
+  display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskBg .iconWrap span{
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  color: rgb(28, 188, 28);
+}
+.taskBg .iconWrap span:hover{
+  color: yellow;
 }
