@@ -112,6 +112,17 @@ body {
 .taskBg .iconWrap span:hover{
   color: yellow;
 }
+.update-button,
+.cancel-button,
+.add-button{
+  transition: 0.3s;
+}
+.add-button:hover,
+.update-button:hover{
+  background-color: rgb(207, 109, 11);
+  border: 1px solid #555;
+}
+
 /* User */
 .container-user{
   display: flex;

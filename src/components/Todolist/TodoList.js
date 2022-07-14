@@ -96,13 +96,13 @@ function TodoList() {
               <div className="col-auto">
                 <button
                   onClick={updateTask}
-                  className="btn btn-lg btn-success me-3"
+                  className="btn btn-lg btn-success me-3 update-button"
                 >
                   Update
                 </button>
                 <button
                   onClick={cancelUpdate}
-                  className="btn btn-lg btn-warning"
+                  className="btn btn-lg btn-danger cancel-button"
                 >
                   Cancel
                 </button>
@@ -122,7 +122,7 @@ function TodoList() {
                 />
               </div>
               <div className="col-auto">
-                <button className="btn btn-lg btn-success" onClick={addTask}>
+                <button className="btn btn-lg btn-success add-button" onClick={addTask}>
                   ADD TO DO
                 </button>
               </div>
