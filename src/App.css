@@ -112,3 +112,119 @@ body {
 .taskBg .iconWrap span:hover{
   color: yellow;
 }
+/* User */
+.container-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-user input{
+  border-radius: 12px;
+  padding: 5px;
+  border: 1px solid rgb(4, 116, 75);
+}
+.container-user label{
+  font-size: 20px;
+}
+.user-form-title{
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  height: auto;
+  justify-content: space-evenly;
+}
+.user-form{
+  display: flex;
+  border-radius: 12px;
+  background-color: rgb(167, 54, 54);
+  width: 380px;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-form form{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.user_name {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_gender{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+.user_gender_title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.user_number{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_address{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.user_languages{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.user_languages p{
+  font-size: 20px;
+}
+.languages{
+  display: flex;
+  width: 100%;
+}
+.user-form-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:10px 0 20px 0;
+}
+.user-form-button button{
+  transition: 0.5s;
+}
+.user-form-button button:hover{
+  background-color: rgb(106, 10, 144);
+}
+.user-print{
+  background-color: rgb(5, 133, 133);
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+.user-print-title{
+  margin-top: 12px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.user-print-title-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+.user-print-title-list p{
+  font-size: 20px;
+}
+.box{
+  height: 24px;
+}
